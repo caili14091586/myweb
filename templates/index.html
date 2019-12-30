@@ -1,0 +1,11 @@
+<!--index.html-->
+{% extends 'base.html' %}
+{% block title %} welcom to my webo
+{% endblock  %}
+{% block content %}
+{% for post  in  posts %}
+    <p>
+   <a href='/post/{{post.slug}}'>{{post.title}}</a>
+     </p>
+{% endfor %}
+{% endblock  %}

@@ -1,0 +1,12 @@
+<!--post.html-->
+{% extends 'base.html' %}
+{% block title %}
+<h1>{{post.title}}</h1>
+{% endblock title %}
+{% block content %}
+   <p>
+      {{post.body}}
+   </p>
+   <hr>
+  <a href='/'>back index</a>
+{% endblock content %}
