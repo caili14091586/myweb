@@ -1,11 +1,12 @@
 <!--post.html-->
 {% extends 'base.html' %}
+{% load markdown_deux_tags %}
 {% block title %}
 <h1>{{post.title}}</h1>
 {% endblock title %}
 {% block content %}
    <p>
-      {{post.body}}
+      {{post.body | markdown }}
    </p>
    <hr>
   <a href='/'>back index</a>
